@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import List from './List';
+import NavBar from './NavBar'
 import './App.css';
 
 const todos = [
@@ -14,7 +15,7 @@ class App extends Component {
   return (
       <div className="App">
         <header className="App-header"> <h2>Todo List</h2> </header>
-
+        <NavBar todos={todos}/>
         {/* App render todos by handing todos as a props to list */}
         <List todos={todos} />
       </div>
